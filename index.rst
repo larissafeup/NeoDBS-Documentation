@@ -79,4 +79,7 @@ Full documentation of all function's and modules.
 Collaborators
 -------------
 
-NeoDBS was developed by the `Neurophysiology and Neuroenginnering Laboratory <https://www.neuro-ephys.org/>`_ (Porto, Portugal). Article coming soon.
+NeoDBS was developed by the `Neurophysiology and Neuroenginnering Laboratory <https://www.neuro-ephys.org/>`_ (Porto, Portugal). Article preprint available (https://doi.org/10.64898/2026.03.27.714691).
+
+To cite NeoDBS use:
+Rodrigues, L., Ferreira, A., Pereira, I., Moreira, R., & Jacinto, L. (2026). NeoDBS: Open-Source Platform for Visualization and Analysis of Electrophysiological Recordings from Deep Brain Stimulation Systems. bioRxiv, 2026.03.27.714691. https://doi.org/10.64898/2026.03.27.714691
