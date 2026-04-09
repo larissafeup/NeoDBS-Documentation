@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1. In-Clinic Data &mdash; NeoDBS Beta documentation</title>
+  <title>1. In-Clinic Data &mdash; NeoDBS v0.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -119,15 +119,17 @@ Status</p></th>
 <tr class="row-even"><td><p><em>Setup</em></p></td>
 <td><p>In-clinic</p></td>
 <td><p>On or Off</p></td>
-<td><p>Required before other
-modes (except <em>Survey</em>);
+<td><p>Artifact and Impedance
+check: stimulation ON/OFF
 Records each segment for
 21s each (~90s duration)</p></td>
 </tr>
 <tr class="row-odd"><td><p><em>Survey</em></p></td>
 <td><p>In-clinic</p></td>
 <td><p>Off</p></td>
-<td><p>Records each segment for
+<td><p>Artifact and Impedance
+check;
+Records each segment for
 21s each (~90s duration)</p></td>
 </tr>
 <tr class="row-even"><td><p><em>Survey</em>
@@ -141,8 +143,7 @@ pairs (0-2, 0-3, 1-3),
 full-bandwidth (up to 125
 Hz)</p></td>
 </tr>
-<tr class="row-odd"><td><p><em>Indefinite</em>
-<em>Streaming</em></p></td>
+<tr class="row-odd"><td><p><em>Streaming</em></p></td>
 <td><p>In-clinic</p></td>
 <td><p>On or Off</p></td>
 <td><p>Long-duration LFP
@@ -152,6 +153,27 @@ mulation.</p></td>
 </tr>
 </tbody>
 </table>
+<p>In the case of <em>Setup</em> and <em>Survey</em> modes, more than one tab will open since different
+types of acquisitions and data are stored in those modes.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><em>Setup</em> mode tabs:</dt><dd><ul>
+<li><p><em>Setup ON</em>: 21s of raw signals of segments/channels with stimulation <strong>ON</strong>;</p></li>
+<li><p><em>Setup OFF</em>: 21s of raw signals of segments/channels with stimulation <strong>OFF</strong>;</p></li>
+<li><p><em>Setup ARTIFACTS</em>: Medtronic's PSD estimation with <strong>artifact check</strong>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><em>Survey</em> mode tabs:</dt><dd><ul>
+<li><p><em>Survey</em>: 21s of raw signals of segments/channels with stimulation <strong>OFF</strong>;</p></li>
+<li><p><em>Survey PSD</em>: Medtronic's PSD estimation and peak frequencies.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>NeoDBS works with a visibility approach, meaning selected methods will only be applied to the

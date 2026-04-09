@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DataHandling module &mdash; NeoDBS Beta documentation</title>
+  <title>DataHandling module &mdash; NeoDBS v0.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -91,7 +91,7 @@
 <span id="datahandling-module"></span><h1>DataHandling module<a class="headerlink" href="#module-DataHandling" title="Permalink to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="DataHandling.MissingTimeline">
-<span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">MissingTimeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#MissingTimeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.MissingTimeline" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">MissingTimeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">days</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filtered</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#MissingTimeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.MissingTimeline" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks missing points in timeline (missing point: when difference between points is &gt;= than 11 minutes) and returns a new corrected timeline dict, correcting missing LFP values through mean interpolation.</p>
 <dl class="simple">
 <dt>new_dic = {</dt><dd><p>'X': corrected timeline,
@@ -130,7 +130,7 @@ Assumes naive datetimes are in the specified local timezone.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="DataHandling.correctMissingTimeline">
-<span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">correctMissingTimeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Timeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'X'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#correctMissingTimeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.correctMissingTimeline" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">correctMissingTimeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Timeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'X'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">days</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filtered</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#correctMissingTimeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.correctMissingTimeline" title="Permalink to this definition">¶</a></dt>
 <dd><p>Corrects timeline recordings for both hemispheres.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -412,7 +412,7 @@ Data = {</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="DataHandling.getStimulation">
-<span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">getStimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#getStimulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.getStimulation" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">getStimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Right'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#getStimulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.getStimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns at-home stimulation amplitude.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -442,10 +442,24 @@ Data = {</p>
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="DataHandling.getStreamingStimulationValues">
+<span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">getStreamingStimulationValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#getStreamingStimulationValues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.getStreamingStimulationValues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns streaming stimulation amplitude.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Data</strong> -- dict, from DataHandling.getData()</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>str (status), dict (right amplitude), dict (left amplitude)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="DataHandling.info_electrodes">
 <span class="sig-prename descclassname"><span class="pre">DataHandling.</span></span><span class="sig-name descname"><span class="pre">info_electrodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Initial'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/DataHandling.html#info_electrodes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#DataHandling.info_electrodes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return information of the active electrodes from TIMELINE mode
-side 0 - Left
+side 0 - Left;
 side 1 - Right</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

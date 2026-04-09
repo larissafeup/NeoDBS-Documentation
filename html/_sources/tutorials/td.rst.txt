@@ -11,12 +11,14 @@ to analyze, which will open a tab with the respective plotted signals and functi
 | Mode               | Usage Context | Stimulation | Key Features             | 
 |                    |               | Status      |                          |                          
 +====================+===============+=============+==========================+
-| *Setup*            | In-clinic     | On or Off   | Required before other    |
-|                    |               |             | modes (except *Survey*); |
+| *Setup*            | In-clinic     | On or Off   | Artifact and Impedance   |
+|                    |               |             | check: stimulation ON/OFF|
 |                    |               |             | Records each segment for |
 |                    |               |             | 21s each (~90s duration) |
 +--------------------+---------------+-------------+--------------------------+
-| *Survey*           | In-clinic     | Off         | Records each segment for |
+| *Survey*           | In-clinic     | Off         | Artifact and Impedance   |
+|                    |               |             | check;                   |
+|                    |               |             | Records each segment for |
 |                    |               |             | 21s each (~90s duration) |
 |                    |               |             |                          |
 +--------------------+---------------+-------------+--------------------------+
@@ -26,12 +28,24 @@ to analyze, which will open a tab with the respective plotted signals and functi
 |                    |               |             | full-bandwidth (up to 125|                          
 |                    |               |             | Hz)                      |                           
 +--------------------+---------------+-------------+--------------------------+
-| *Indefinite*       | In-clinic     | On or Off   | Long-duration LFP        | 
-| *Streaming*        |               |             | recording from contact   | 
+| *Streaming*        | In-clinic     | On or Off   | Long-duration LFP        | 
+|                    |               |             | recording from contact   | 
 |                    |               |             | pairs compatible with sti|                          
 |                    |               |             | mulation.                |                          
 |                    |               |             |                          |
 +--------------------+---------------+-------------+--------------------------+
+
+In the case of *Setup* and *Survey* modes, more than one tab will open since different
+types of acquisitions and data are stored in those modes. 
+
+* *Setup* mode tabs:
+    * *Setup ON*: 21s of raw signals of segments/channels with stimulation **ON**;
+    * *Setup OFF*: 21s of raw signals of segments/channels with stimulation **OFF**;
+    * *Setup ARTIFACTS*: Medtronic's PSD estimation with **artifact check**. 
+
+* *Survey* mode tabs:
+    * *Survey*: 21s of raw signals of segments/channels with stimulation **OFF**;
+    * *Survey PSD*: Medtronic's PSD estimation and peak frequencies.
 
 
 .. note::

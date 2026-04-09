@@ -72,10 +72,12 @@ If you're wondering what is the best window to use, here's a summary of the func
 +------------------------------------+---------------------+--------------------+
 | Default/Customizable Filtering     | |check|             | |check|            |
 +------------------------------------+---------------------+--------------------+
-| Default/Customizable Spectral      | |check|             | |check|            |
+| Default/Customizable Signal        | |check|             | |check|            |
 | Analysis                           |                     |                    |
 +------------------------------------+---------------------+--------------------+
-| In-Clinic Event Annotation         | |check|             | |check|            |
+| In-Clinic Event Annotation         | |check|             | **X**              |
++------------------------------------+---------------------+--------------------+
+| In-Clinic Event-locked Segmentation| **X**               | |check|            |
 +------------------------------------+---------------------+--------------------+
 | Patient Event-locked Segmentation  | **X**               | |check|            |
 +------------------------------------+---------------------+--------------------+
@@ -83,7 +85,7 @@ If you're wondering what is the best window to use, here's a summary of the func
 +------------------------------------+---------------------+--------------------+
 | Manual Segmentation                | |check|             | |check|            |
 +------------------------------------+---------------------+--------------------+
-| Before/After Event Analysis        | |check|             | |check|            |
+| Before/After Event Analysis        | **X**               | |check|            |
 +------------------------------------+---------------------+--------------------+
 
 .. |check| unicode:: U+2713 .. CHECK MARK
@@ -174,7 +176,7 @@ After understanding what workspaces exist, here is a simple workflow for analysi
 
 .. image:: ../img/start.png
 
-1. **Select type of analysis to be performed:** :ref:`Individual Window <ind>` or :ref:`Combined Window <comb>`.
+1. **Select type of analysis to be performed:** :ref:`Individual Window <ind>` or :ref:`Combined Window <comb>`. A *movable* and *resizable* window will open, a new workspace.
 
 .. image:: ../img/main.png
 
@@ -191,7 +193,10 @@ After understanding what workspaces exist, here is a simple workflow for analysi
 .. image:: ../img/window.png
 
 5. Recordings can be accessed by clicking on the **respective recording mode button**. 
-6. **Each recording mode will have its respective tab**, with the associated recordings and functionalities. Preprocessing and spectral analysis methods will only be applied to the selected signals (visible on the main plot of tab).
+6. **Each recording mode will have its respective tab**, with the associated recordings and functionalities. 
+
+.. warning::
+   Preprocessing and spectral analysis methods will only be applied to the selected signals (visible on the main plot of tab).
 
 .. image:: ../img/tab.png
 
@@ -206,9 +211,11 @@ After understanding what workspaces exist, here is a simple workflow for analysi
 
 9. **Filtering** methods will update the signals in the main plot. **Signal Analysis** methods create a new plot, under a **child tab** named after the applied method.
 
-10. **Signals, plots and tables can be easily exported** either individually, per window (workspace) or all windows at once.
+10. **Signals, plots and tables can be easily exported** either individually, per window (workspace) or all windows at once. 
 
 .. image:: ../img/save.png
+
+11. Plot **manipulation** is also facilitated. **Right click** on plot, or one of the axis, to see more tools to help you explore the plot. For example, double click on the plot will recenter your plot based on the available series.
 
 Here you can find a scheme that represents the possible workflow in NeoDBS.
 

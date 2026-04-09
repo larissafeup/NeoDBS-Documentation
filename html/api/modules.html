@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>neodbs &mdash; NeoDBS Beta documentation</title>
+  <title>neodbs &mdash; NeoDBS v0.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -114,6 +114,7 @@
 <li class="toctree-l2"><a class="reference internal" href="DataHandling.html#DataHandling.getStimStatus"><code class="docutils literal notranslate"><span class="pre">getStimStatus()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="DataHandling.html#DataHandling.getStimulation"><code class="docutils literal notranslate"><span class="pre">getStimulation()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="DataHandling.html#DataHandling.getStreamingStimulation"><code class="docutils literal notranslate"><span class="pre">getStreamingStimulation()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="DataHandling.html#DataHandling.getStreamingStimulationValues"><code class="docutils literal notranslate"><span class="pre">getStreamingStimulationValues()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="DataHandling.html#DataHandling.info_electrodes"><code class="docutils literal notranslate"><span class="pre">info_electrodes()</span></code></a></li>
 </ul>
 </li>
@@ -157,6 +158,7 @@
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.change_event_name"><code class="docutils literal notranslate"><span class="pre">change_event_name()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.change_inf_line_color"><code class="docutils literal notranslate"><span class="pre">change_inf_line_color()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.change_line_color"><code class="docutils literal notranslate"><span class="pre">change_line_color()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.change_line_color_and_thickness"><code class="docutils literal notranslate"><span class="pre">change_line_color_and_thickness()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.change_line_thickness"><code class="docutils literal notranslate"><span class="pre">change_line_thickness()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.change_plot_color"><code class="docutils literal notranslate"><span class="pre">change_plot_color()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.change_text_color"><code class="docutils literal notranslate"><span class="pre">change_text_color()</span></code></a></li>
@@ -219,9 +221,7 @@
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.impedance_tab"><code class="docutils literal notranslate"><span class="pre">impedance_tab()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.indefinite_tab"><code class="docutils literal notranslate"><span class="pre">indefinite_tab()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.insert_events"><code class="docutils literal notranslate"><span class="pre">insert_events()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.install_requirements_if_needed"><code class="docutils literal notranslate"><span class="pre">install_requirements_if_needed()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.interval_events"><code class="docutils literal notranslate"><span class="pre">interval_events()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.is_package_installed"><code class="docutils literal notranslate"><span class="pre">is_package_installed()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.load_main_ui"><code class="docutils literal notranslate"><span class="pre">load_main_ui()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_coherence"><code class="docutils literal notranslate"><span class="pre">plot_coherence()</span></code></a></li>
@@ -232,6 +232,7 @@
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_pac"><code class="docutils literal notranslate"><span class="pre">plot_pac()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_spectrogram_joined"><code class="docutils literal notranslate"><span class="pre">plot_spectrogram_joined()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_spectrogram_og"><code class="docutils literal notranslate"><span class="pre">plot_spectrogram_og()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_streaming_stimulation"><code class="docutils literal notranslate"><span class="pre">plot_streaming_stimulation()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_td"><code class="docutils literal notranslate"><span class="pre">plot_td()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_wavelet"><code class="docutils literal notranslate"><span class="pre">plot_wavelet()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="GUI.html#GUI.plot_wavelet_joined"><code class="docutils literal notranslate"><span class="pre">plot_wavelet_joined()</span></code></a></li>
@@ -287,7 +288,17 @@
 <li class="toctree-l2"><a class="reference internal" href="Preprocessing.html#Preprocessing.removeCardiacComponent"><code class="docutils literal notranslate"><span class="pre">removeCardiacComponent()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="temp.html">temp module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="temp.html">temp module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.CheckMissingPacketsTD"><code class="docutils literal notranslate"><span class="pre">CheckMissingPacketsTD()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.check_stream_data"><code class="docutils literal notranslate"><span class="pre">check_stream_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.correct4MissingSamples"><code class="docutils literal notranslate"><span class="pre">correct4MissingSamples()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.deduplicate_packets"><code class="docutils literal notranslate"><span class="pre">deduplicate_packets()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.detect_gaps"><code class="docutils literal notranslate"><span class="pre">detect_gaps()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.follows_pattern"><code class="docutils literal notranslate"><span class="pre">follows_pattern()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.morlet_wavelet"><code class="docutils literal notranslate"><span class="pre">morlet_wavelet()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="temp.html#temp.wavelet_transform"><code class="docutils literal notranslate"><span class="pre">wavelet_transform()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="utils.html">utils module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="utils.html#utils.access_by_path"><code class="docutils literal notranslate"><span class="pre">access_by_path()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="utils.html#utils.after_point"><code class="docutils literal notranslate"><span class="pre">after_point()</span></code></a></li>

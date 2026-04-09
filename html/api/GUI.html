@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GUI module &mdash; NeoDBS Beta documentation</title>
+  <title>GUI module &mdash; NeoDBS v0.1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -329,14 +329,19 @@ Channels are to be renamed are hardcoded.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="GUI.change_line_color">
-<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">change_line_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#change_line_color"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.change_line_color" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">change_line_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#change_line_color"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.change_line_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>Theme for mvLineSeries</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>color_id</strong> -- int, index of color</p>
+<dd class="field-odd"><p><strong>color_id</strong> -- int or list, index of color or rgba code</p>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GUI.change_line_color_and_thickness">
+<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">change_line_color_and_thickness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#change_line_color_and_thickness"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.change_line_color_and_thickness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="GUI.change_line_thickness">
@@ -411,7 +416,7 @@ parameter_values: dict, key: name of parameter, item: value</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="GUI.colormap_buttons">
-<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">colormap_buttons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mother</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_tags</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#colormap_buttons"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.colormap_buttons" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">colormap_buttons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mother</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spec_tags</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_coherogram</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#colormap_buttons"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.colormap_buttons" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -451,11 +456,14 @@ parameter_values: dict, key: name of parameter, item: value</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="GUI.create_alpha_theme">
-<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">create_alpha_theme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#create_alpha_theme"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.create_alpha_theme" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">create_alpha_theme</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#create_alpha_theme"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.create_alpha_theme" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create and return a DearPyGui plot alpha theme, to be binded to line series.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>(</strong><strong>float</strong><strong>)</strong> (<em>alpha</em>) -- Opacity value between 0.0 and 1.0</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>float</strong><strong>)</strong> (<em>alpha</em>) -- Opacity value between 0.0 and 1.0</p></li>
+<li><p><strong>(</strong><strong>list</strong><strong>)</strong> (<em>color</em>) -- rbga values of line (for cases of dpg.add_line_series, that are not filled)</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The theme ID</p>
@@ -1017,17 +1025,6 @@ or 'tab_{mode}_{window_id}_{suffix}'.</p>
 <dd></dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="GUI.install_requirements_if_needed">
-<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">install_requirements_if_needed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">requirements_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'requirements.txt'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#install_requirements_if_needed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.install_requirements_if_needed" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks requirements, installs packages missing.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>requirements_file</strong> -- .txt file,</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="GUI.interval_events">
 <span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">interval_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tab_tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mini</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#interval_events"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.interval_events" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds buttons to get event-locked segmentation interval.</p>
@@ -1040,17 +1037,6 @@ or 'tab_{mode}_{window_id}_{suffix}'.</p>
 <li><p><strong>mini</strong> -- default to 15s, value of before interval (s)</p></li>
 <li><p><strong>maxi</strong> -- default to 15s, value of after interval (s)</p></li>
 </ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="GUI.is_package_installed">
-<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">is_package_installed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">package_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#is_package_installed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.is_package_installed" title="Permalink to this definition">¶</a></dt>
-<dd><p>Checks if package installed: tries to import package, if exception thrown return False (signalizes for package to be installed)</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>package_name</strong> -- str, package name</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1198,6 +1184,11 @@ to signals identified by signal_tags, to be ploted in tab_label, child of tab_ta
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="GUI.plot_streaming_stimulation">
+<span class="sig-prename descclassname"><span class="pre">GUI.</span></span><span class="sig-name descname"><span class="pre">plot_streaming_stimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sender</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/GUI.html#plot_streaming_stimulation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#GUI.plot_streaming_stimulation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="GUI.plot_td">
